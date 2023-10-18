@@ -1,0 +1,41 @@
+/*1. color general de la lletra negra*/
+
+#container {
+    color: black;
+}
+
+/*2. titol nivell 1 fons blanc lletra gris*/
+
+#titol-pagina {
+    background-color: white;
+    color: grey;
+}
+
+/*3. tots els strong en color verd i subratllats*/
+
+p.paragraf1 strong, p.paragraf2 strong {
+    color: green;
+    text-decoration: underline;
+}
+
+/*4. enllaços del paràgraf2 en italica*/
+
+p.paragraf2 a {
+    font-style: italic;
+}
+
+
+/*5. footer general del web centrat i lletra de 10px*/
+
+div > footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
+/*Quins elements passen a veure’s diferent i quins es continuen veient tal com tu havies definit? Per què?
+    En el meu cas es veu exactament igual i no hi ha canvis, perque els nostres selectors son mes específics i utilitzen correctament la especificitat que el altre archiu CSS.
+
+Com ho faries perquè tots els elements es continuïn veient tal com es veia abans d’invertir l’ordre de càrrega? Proposa un codi CSS.
+    Com en el nostre cas no cambia res no fariem res. Això passa perque en la nostre sobreescriptura utilitzem selectors més prioritaris. Per exemple, una regla amb un selector més específic anul·larà una regla amb un selector menys específic, fins i tot si la regla menys específica es defineix després.
+*/
